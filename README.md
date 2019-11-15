@@ -20,7 +20,6 @@ with a brief physics model based on periodical RMS input.
 
 
 # Code
-[main source file](src_bin/biconnected_embedding_finder.cpp)
 
 * [VUMeterView](app/src/main/java/com/example/vumeter/VUMeterView.java): GLSurfaceView that displays the image on the screen. Not much in it other than interaction with Android View protocol and instantiation of the Renderer.
 
