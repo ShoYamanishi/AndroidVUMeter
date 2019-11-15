@@ -20,14 +20,15 @@ with a brief physics model based on periodical RMS input.
 
 
 # Code
+[main source file](src_bin/biconnected_embedding_finder.cpp)
 
-* VUMeterView: GLSurfaceView that displays the image on the screen. Not much in it other than interaction with Android View protocol and instantiation of the Renderer.
+* [VUMeterView](app/src/main/java/com/example/vumeter/VUMeterView.java): GLSurfaceView that displays the image on the screen. Not much in it other than interaction with Android View protocol and instantiation of the Renderer.
 
-* VUMeterRenderer: OpenGL renderer. It uses GLES2.0
+* [VUMeterRenderer](app/src/main/java/com/example/vumeter/VUMeterRenderer.java): OpenGL renderer. It uses GLES2.0
 
-* VUMeterModel: The model geometry, the texture, and the shaders are handled here.
+* [VUMeterModel](app/src/main/java/com/example/vumeter/VUMeterModel.java): The model geometry, the texture, and the shaders are handled here.
 
-* AudioReceiver : this instantiates AudioRecord, receives audio periodically, and calculates RMS, which is passed to VUMeterModel via AudioReceiverListener.
+* [AudioReceiver](app/src/main/java/com/example/vumeter/AudioReceiver.java) : this instantiates AudioRecord, receives audio periodically, and calculates RMS, which is passed to VUMeterModel via [AudioReceiverListener](app/src/main/java/com/example/vumeter/AudioReceiverListener.java).
 
 
 # Dependencies
